@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  ChatViewController.h
 //  BluetoothChat
 //
 //  Created by Cho-Yeung Lam on 23/3/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface ChatViewController : UITableViewController
+
+@property (strong, nonatomic) NSString *friendName;
 
 @end

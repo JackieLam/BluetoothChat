@@ -23,6 +23,8 @@
 		1891A3B718DEDBFD00887ECA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891A3B518DEDBFD00887ECA /* LoginViewController.xib */; };
 		1891A3BB18DEDEEF00887ECA /* ContactListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3B918DEDEEF00887ECA /* ContactListController.m */; };
 		1891A3BC18DEDEEF00887ECA /* ContactListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891A3BA18DEDEEF00887ECA /* ContactListController.xib */; };
+		1891A3C018DEE54500887ECA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3BE18DEE54500887ECA /* ChatViewController.m */; };
+		1891A3C118DEE54500887ECA /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891A3BF18DEE54500887ECA /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		1891A3B818DEDEEF00887ECA /* ContactListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListController.h; sourceTree = "<group>"; };
 		1891A3B918DEDEEF00887ECA /* ContactListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListController.m; sourceTree = "<group>"; };
 		1891A3BA18DEDEEF00887ECA /* ContactListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListController.xib; sourceTree = "<group>"; };
+		1891A3BD18DEE54500887ECA /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		1891A3BE18DEE54500887ECA /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		1891A3BF18DEE54500887ECA /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +124,7 @@
 			children = (
 				1891A39318DEDBE700887ECA /* AppDelegate.h */,
 				1891A39418DEDBE700887ECA /* AppDelegate.m */,
-				1891A3B318DEDBFD00887ECA /* LoginViewController.h */,
-				1891A3B418DEDBFD00887ECA /* LoginViewController.m */,
-				1891A3B518DEDBFD00887ECA /* LoginViewController.xib */,
-				1891A3B818DEDEEF00887ECA /* ContactListController.h */,
-				1891A3B918DEDEEF00887ECA /* ContactListController.m */,
-				1891A3BA18DEDEEF00887ECA /* ContactListController.xib */,
+				1891A3C218DEE55200887ECA /* ViewControllers */,
 				1891A39618DEDBE700887ECA /* Images.xcassets */,
 				1891A38B18DEDBE700887ECA /* Supporting Files */,
 			);
@@ -158,6 +158,22 @@
 				1891A3A618DEDBE700887ECA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1891A3C218DEE55200887ECA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1891A3B318DEDBFD00887ECA /* LoginViewController.h */,
+				1891A3B418DEDBFD00887ECA /* LoginViewController.m */,
+				1891A3B518DEDBFD00887ECA /* LoginViewController.xib */,
+				1891A3B818DEDEEF00887ECA /* ContactListController.h */,
+				1891A3B918DEDEEF00887ECA /* ContactListController.m */,
+				1891A3BA18DEDEEF00887ECA /* ContactListController.xib */,
+				1891A3BD18DEE54500887ECA /* ChatViewController.h */,
+				1891A3BE18DEE54500887ECA /* ChatViewController.m */,
+				1891A3BF18DEE54500887ECA /* ChatViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +254,7 @@
 				1891A38F18DEDBE700887ECA /* InfoPlist.strings in Resources */,
 				1891A39718DEDBE700887ECA /* Images.xcassets in Resources */,
 				1891A3BC18DEDEEF00887ECA /* ContactListController.xib in Resources */,
+				1891A3C118DEE54500887ECA /* ChatViewController.xib in Resources */,
 				1891A3B718DEDBFD00887ECA /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +276,7 @@
 			files = (
 				1891A39518DEDBE700887ECA /* AppDelegate.m in Sources */,
 				1891A39118DEDBE700887ECA /* main.m in Sources */,
+				1891A3C018DEE54500887ECA /* ChatViewController.m in Sources */,
 				1891A3BB18DEDEEF00887ECA /* ContactListController.m in Sources */,
 				1891A3B618DEDBFD00887ECA /* LoginViewController.m in Sources */,
 			);
@@ -457,6 +475,7 @@
 				1891A3AF18DEDBE700887ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1891A3B018DEDBE700887ECA /* Build configuration list for PBXNativeTarget "BluetoothChatTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +484,7 @@
 				1891A3B218DEDBE700887ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
