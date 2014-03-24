@@ -8,16 +8,26 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "CBCentralManagerViewController.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+
+    self.centralManagerViewController = [[CBCentralManagerViewController alloc] initWithNibName:@"CBCentralManagerViewController" bundle:nil];
+    
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self.loginViewController];
-    self.window.rootViewController = nav;
+//    self.window.rootViewController = nav;
+    self.window.rootViewController = self.centralManagerViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

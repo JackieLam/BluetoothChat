@@ -7,13 +7,20 @@
 //
 
 #import "ContactListController.h"
-#import "ChatViewController.h"
+#import "ContactTableViewDelegate.h"
+#import "ContactPeripheralDelegate.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @interface ContactListController ()
 
 @property (strong, nonatomic) NSMutableArray *contactsList;
 
+@property (strong, nonatomic) CBCentralManager *centralManager;
+@property (strong, nonatomic) CBPeripheralManager *peripheralManager;
+
 @end
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ContactListController
 
@@ -22,94 +29,26 @@
     [super viewDidLoad];
     self.title = @"Contacts";
     _contactsList = [[NSMutableArray alloc] initWithArray:@[@"A", @"B", @"C"]];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
+    
+// TableView Delegate
+    static NSString *cellIdentifier = @"CellIdentifier";
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    ContactTableViewDelegate *tableViewDelegate = [[ContactTableViewDelegate alloc] initWithContacts:_contactsList cellIdentifier:cellIdentifier];
+    self.tableView.delegate = tableViewDelegate;
+
+// Central Manager
+    
+// Peripheral Manager
+//    ContactPeripheralDelegate *peripheralDelegate = [ContactPeripheralDelegate alloc] initWithPeripheralManager:<#(CBPeripheralManager *)#>;
+//    self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate: queue:nil];
+    
+    //Server start advertising
+//    [_peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID1]] }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.contactsList count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *cellIdentifier = @"CellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
-    }
-    cell.textLabel.text = self.contactsList[indexPath.row];
-    
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    ChatViewController *chatViewController = [[ChatViewController alloc] initWithNibName:@"ChatViewController" bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:chatViewController animated:YES];
-}
-
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148972A81B8443D4B106968B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D69909B7F14328BFC9404A /* libPods.a */; };
+		1889DF7918DFB560001F260F /* CBCentralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1889DF7718DFB560001F260F /* CBCentralManagerViewController.m */; };
+		1889DF7A18DFB560001F260F /* CBCentralManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1889DF7818DFB560001F260F /* CBCentralManagerViewController.xib */; };
 		1891A38518DEDBE700887ECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891A38418DEDBE700887ECA /* Foundation.framework */; };
 		1891A38718DEDBE700887ECA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891A38618DEDBE700887ECA /* CoreGraphics.framework */; };
 		1891A38918DEDBE700887ECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891A38818DEDBE700887ECA /* UIKit.framework */; };
@@ -25,6 +28,10 @@
 		1891A3BC18DEDEEF00887ECA /* ContactListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891A3BA18DEDEEF00887ECA /* ContactListController.xib */; };
 		1891A3C018DEE54500887ECA /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3BE18DEE54500887ECA /* ChatViewController.m */; };
 		1891A3C118DEE54500887ECA /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891A3BF18DEE54500887ECA /* ChatViewController.xib */; };
+		1891A3C618DF076D00887ECA /* ContactTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3C518DF076D00887ECA /* ContactTableViewDelegate.m */; };
+		1891A3CE18DF0ACF00887ECA /* ContactCentralDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3CD18DF0ACF00887ECA /* ContactCentralDelegate.m */; };
+		1891A3D618DF11E700887ECA /* DV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3D318DF11E700887ECA /* DV.m */; };
+		1891A3D718DF11E700887ECA /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891A3D518DF11E700887ECA /* Node.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D69909B7F14328BFC9404A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1889DF7618DFB560001F260F /* CBCentralManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBCentralManagerViewController.h; path = Origin/CBCentralManagerViewController.h; sourceTree = "<group>"; };
+		1889DF7718DFB560001F260F /* CBCentralManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBCentralManagerViewController.m; path = Origin/CBCentralManagerViewController.m; sourceTree = "<group>"; };
+		1889DF7818DFB560001F260F /* CBCentralManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBCentralManagerViewController.xib; path = Origin/CBCentralManagerViewController.xib; sourceTree = "<group>"; };
 		1891A38118DEDBE700887ECA /* BluetoothChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1891A38418DEDBE700887ECA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1891A38618DEDBE700887ECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +74,18 @@
 		1891A3BD18DEE54500887ECA /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		1891A3BE18DEE54500887ECA /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		1891A3BF18DEE54500887ECA /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		1891A3C418DF076D00887ECA /* ContactTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactTableViewDelegate.h; path = ContactList/ContactTableViewDelegate.h; sourceTree = "<group>"; };
+		1891A3C518DF076D00887ECA /* ContactTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactTableViewDelegate.m; path = ContactList/ContactTableViewDelegate.m; sourceTree = "<group>"; };
+		1891A3CC18DF0ACF00887ECA /* ContactCentralDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactCentralDelegate.h; path = ContactList/ContactCentralDelegate.h; sourceTree = "<group>"; };
+		1891A3CD18DF0ACF00887ECA /* ContactCentralDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactCentralDelegate.m; path = ContactList/ContactCentralDelegate.m; sourceTree = "<group>"; };
+		1891A3CF18DF0D8900887ECA /* SERVICE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SERVICE.h; sourceTree = "<group>"; };
+		1891A3D218DF11E700887ECA /* DV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DV.h; sourceTree = "<group>"; };
+		1891A3D318DF11E700887ECA /* DV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DV.m; sourceTree = "<group>"; };
+		1891A3D418DF11E700887ECA /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1891A3D518DF11E700887ECA /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		1891A3D918DF123600887ECA /* ContactPeripheralDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContactPeripheralDelegate.h; path = ContactList/ContactPeripheralDelegate.h; sourceTree = "<group>"; };
+		1891A3DA18DF123600887ECA /* ContactPeripheralDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContactPeripheralDelegate.m; path = ContactList/ContactPeripheralDelegate.m; sourceTree = "<group>"; };
+		47809F51560D4B4D908567AA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +96,7 @@
 				1891A38718DEDBE700887ECA /* CoreGraphics.framework in Frameworks */,
 				1891A38918DEDBE700887ECA /* UIKit.framework in Frameworks */,
 				1891A38518DEDBE700887ECA /* Foundation.framework in Frameworks */,
+				148972A81B8443D4B106968B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1889DF7518DFB382001F260F /* CBCentral */ = {
+			isa = PBXGroup;
+			children = (
+				1889DF7618DFB560001F260F /* CBCentralManagerViewController.h */,
+				1889DF7718DFB560001F260F /* CBCentralManagerViewController.m */,
+				1889DF7818DFB560001F260F /* CBCentralManagerViewController.xib */,
+			);
+			name = CBCentral;
+			sourceTree = "<group>";
+		};
 		1891A37818DEDBE700887ECA = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +130,7 @@
 				1891A3A318DEDBE700887ECA /* BluetoothChatTests */,
 				1891A38318DEDBE700887ECA /* Frameworks */,
 				1891A38218DEDBE700887ECA /* Products */,
+				47809F51560D4B4D908567AA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +150,7 @@
 				1891A38618DEDBE700887ECA /* CoreGraphics.framework */,
 				1891A38818DEDBE700887ECA /* UIKit.framework */,
 				1891A39D18DEDBE700887ECA /* XCTest.framework */,
+				03D69909B7F14328BFC9404A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +160,8 @@
 			children = (
 				1891A39318DEDBE700887ECA /* AppDelegate.h */,
 				1891A39418DEDBE700887ECA /* AppDelegate.m */,
+				1891A3CF18DF0D8900887ECA /* SERVICE.h */,
+				1891A3D818DF11ED00887ECA /* DV */,
 				1891A3C218DEE55200887ECA /* ViewControllers */,
 				1891A39618DEDBE700887ECA /* Images.xcassets */,
 				1891A38B18DEDBE700887ECA /* Supporting Files */,
@@ -163,17 +201,43 @@
 		1891A3C218DEE55200887ECA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1889DF7518DFB382001F260F /* CBCentral */,
 				1891A3B318DEDBFD00887ECA /* LoginViewController.h */,
 				1891A3B418DEDBFD00887ECA /* LoginViewController.m */,
 				1891A3B518DEDBFD00887ECA /* LoginViewController.xib */,
-				1891A3B818DEDEEF00887ECA /* ContactListController.h */,
-				1891A3B918DEDEEF00887ECA /* ContactListController.m */,
-				1891A3BA18DEDEEF00887ECA /* ContactListController.xib */,
+				1891A3C318DF073700887ECA /* Contacts List */,
 				1891A3BD18DEE54500887ECA /* ChatViewController.h */,
 				1891A3BE18DEE54500887ECA /* ChatViewController.m */,
 				1891A3BF18DEE54500887ECA /* ChatViewController.xib */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1891A3C318DF073700887ECA /* Contacts List */ = {
+			isa = PBXGroup;
+			children = (
+				1891A3B818DEDEEF00887ECA /* ContactListController.h */,
+				1891A3B918DEDEEF00887ECA /* ContactListController.m */,
+				1891A3BA18DEDEEF00887ECA /* ContactListController.xib */,
+				1891A3C418DF076D00887ECA /* ContactTableViewDelegate.h */,
+				1891A3C518DF076D00887ECA /* ContactTableViewDelegate.m */,
+				1891A3CC18DF0ACF00887ECA /* ContactCentralDelegate.h */,
+				1891A3CD18DF0ACF00887ECA /* ContactCentralDelegate.m */,
+				1891A3D918DF123600887ECA /* ContactPeripheralDelegate.h */,
+				1891A3DA18DF123600887ECA /* ContactPeripheralDelegate.m */,
+			);
+			name = "Contacts List";
+			sourceTree = "<group>";
+		};
+		1891A3D818DF11ED00887ECA /* DV */ = {
+			isa = PBXGroup;
+			children = (
+				1891A3D218DF11E700887ECA /* DV.h */,
+				1891A3D318DF11E700887ECA /* DV.m */,
+				1891A3D418DF11E700887ECA /* Node.h */,
+				1891A3D518DF11E700887ECA /* Node.m */,
+			);
+			name = DV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1891A3AD18DEDBE700887ECA /* Build configuration list for PBXNativeTarget "BluetoothChat" */;
 			buildPhases = (
+				B6568742B11244ACAB9D5203 /* Check Pods Manifest.lock */,
 				1891A37D18DEDBE700887ECA /* Sources */,
 				1891A37E18DEDBE700887ECA /* Frameworks */,
 				1891A37F18DEDBE700887ECA /* Resources */,
+				F0BB5E8BBFAD4F67B95B50DF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +289,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Cho-Yeung Lam";
 				TargetAttributes = {
+					1891A38018DEDBE700887ECA = {
+						DevelopmentTeam = YPP93L48Z5;
+					};
 					1891A39B18DEDBE700887ECA = {
 						TestTargetID = 1891A38018DEDBE700887ECA;
 					};
@@ -252,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1891A38F18DEDBE700887ECA /* InfoPlist.strings in Resources */,
+				1889DF7A18DFB560001F260F /* CBCentralManagerViewController.xib in Resources */,
 				1891A39718DEDBE700887ECA /* Images.xcassets in Resources */,
 				1891A3BC18DEDEEF00887ECA /* ContactListController.xib in Resources */,
 				1891A3C118DEE54500887ECA /* ChatViewController.xib in Resources */,
@@ -269,14 +339,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B6568742B11244ACAB9D5203 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0BB5E8BBFAD4F67B95B50DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1891A37D18DEDBE700887ECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1889DF7918DFB560001F260F /* CBCentralManagerViewController.m in Sources */,
 				1891A39518DEDBE700887ECA /* AppDelegate.m in Sources */,
+				1891A3D618DF11E700887ECA /* DV.m in Sources */,
+				1891A3C618DF076D00887ECA /* ContactTableViewDelegate.m in Sources */,
 				1891A39118DEDBE700887ECA /* main.m in Sources */,
 				1891A3C018DEE54500887ECA /* ChatViewController.m in Sources */,
+				1891A3D718DF11E700887ECA /* Node.m in Sources */,
+				1891A3CE18DF0ACF00887ECA /* ContactCentralDelegate.m in Sources */,
 				1891A3BB18DEDEEF00887ECA /* ContactListController.m in Sources */,
 				1891A3B618DEDBFD00887ECA /* LoginViewController.m in Sources */,
 			);
@@ -392,26 +500,34 @@
 		};
 		1891A3AE18DEDBE700887ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47809F51560D4B4D908567AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BluetoothChat/BluetoothChat-Prefix.pch";
 				INFOPLIST_FILE = "BluetoothChat/BluetoothChat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		1891A3AF18DEDBE700887ECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47809F51560D4B4D908567AA /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BluetoothChat/BluetoothChat-Prefix.pch";
 				INFOPLIST_FILE = "BluetoothChat/BluetoothChat-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

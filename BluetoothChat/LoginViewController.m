@@ -16,6 +16,8 @@
 
 @end
 
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
